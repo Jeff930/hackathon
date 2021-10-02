@@ -1,12 +1,12 @@
 const express = require('express')
 var mysql = require('mysql');
-const jwt = require('jsonwebtoken');
-const dotenv = require('dotenv');
+// const jwt = require('jsonwebtoken');
+// const dotenv = require('dotenv');
 const bodyParser = require('body-parser')
 const app = express()
 const port = 3000
-dotenv.config();
-process.env.TOKEN_SECRET;
+// dotenv.config();
+// process.env.TOKEN_SECRET;
 
 // Database connection
 var connection = mysql.createConnection({
