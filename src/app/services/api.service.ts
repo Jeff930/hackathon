@@ -14,7 +14,7 @@ export class ApiService {
       .set('firstname', "Test")
       .set('lastname',"Test")
       .set('email', "Test")
-      .set('password',"Test") 
+      .set('password',"Test")
     return this.http.post<any>('http://localhost:3000/user-signup', body.toString(),
      { headers: { 'Content-Type': 'application/x-www-form-urlencoded' }});
   }
@@ -33,7 +33,7 @@ export class ApiService {
 
   updateUserDetails() {
     const body = new HttpParams()
-      .set('firstname', 'test-edit') 
+      .set('firstname', 'test-edit')
       .set('userId', 7)
       .set('ratingId', '1')
       .set('crewId', '1')
